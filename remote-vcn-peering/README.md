@@ -99,7 +99,7 @@ COMPARTMENT_NETWORK='ocid1.compartment.oc1..<substitua_pelo_seu_ocid>'
   echo ${TOKYO_VCN_ID}
 
   TOKYO_CIDR=$(oci network vcn get \
-  --vcn-id ${OSAKA_VCN_ID} \
+  --vcn-id ${TOKYO_VCN_ID} \
   --raw-output \
   --query 'data."cidr-block"')
   
